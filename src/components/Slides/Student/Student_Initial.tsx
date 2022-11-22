@@ -4,10 +4,10 @@ import { ButtonBack } from '@/components/ButtonBack'
 import { Container } from '@/components/Container'
 import { useFlow } from '@/contexts/FlowContext'
 
-export function Student_Slide_1() {
+export function Student_Initial() {
   const { currentSlide, setCurrentSlide } = useFlow()
 
-  const showSlide = currentSlide === 'Student_Slide_1'
+  const showSlide = currentSlide === 'Student_Initial'
 
   return (
     <Container showSlide={showSlide}>
@@ -17,10 +17,10 @@ export function Student_Slide_1() {
 
       <div className="flex flex-col gap-4">
         <Button onClick={() => setCurrentSlide('Class_Open')}>
-          Turma Aberta?
+          Turma Aberta
         </Button>
         <Button onClick={() => setCurrentSlide('Class_Closed')}>
-          Turma Fechada?
+          Turma Fechada
         </Button>
       </div>
     </Container>

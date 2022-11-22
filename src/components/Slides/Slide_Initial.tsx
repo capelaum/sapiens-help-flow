@@ -13,7 +13,7 @@ export function Slide_Initial() {
       <img src={mat_thinking} alt="" />
 
       <div className="flex flex-col gap-4">
-        <Button onClick={() => setCurrentSlide('Student_Slide_1')}>
+        <Button onClick={() => setCurrentSlide('Student_Initial')}>
           É Aluno?
         </Button>
         <Button>É Colaborador?</Button>

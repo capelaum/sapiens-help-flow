@@ -11,9 +11,9 @@ export function Class_Open() {
 
   return (
     <Container showSlide={showSlide}>
-      <ButtonBack onClick={() => setCurrentSlide('Student_Slide_1')} />
+      <ButtonBack onClick={() => setCurrentSlide('Student_Initial')} />
 
-      <Box>Turma Aberta?</Box>
+      <Box>Turma Aberta</Box>
 
       <div className="flex flex-col gap-4">
         <Button onClick={() => setCurrentSlide('Class_Open_1_1')}>

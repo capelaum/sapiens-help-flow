@@ -11,15 +11,17 @@ export function Class_Closed() {
 
   return (
     <Container showSlide={showSlide}>
-      <ButtonBack onClick={() => setCurrentSlide('Student_Slide_1')} />
+      <ButtonBack onClick={() => setCurrentSlide('Student_Initial')} />
 
-      <Box>Turma Fechada?</Box>
+      <Box>Turma Fechada</Box>
 
       <div className="flex flex-col gap-4">
         <Button onClick={() => setCurrentSlide('Class_Closed_1_1')}>
           EAD + Trilhas (Moodle)
         </Button>
-        <Button>GAE + PAE (Manual ADT)</Button>
+        <Button onClick={() => setCurrentSlide('Class_Closed_2_1')}>
+          GAE + PAE (Manual ADT)
+        </Button>
       </div>
     </Container>
   )
