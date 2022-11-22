@@ -16,9 +16,9 @@ export function Student_Initial() {
       )}
 
       <Container showSlide={showSlide}>
-        <Box>Qual é o tipo do curso?</Box>
+        <Box className="bg-blue-700">Qual é o tipo do curso?</Box>
 
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-6">
           <Button onClick={() => setCurrentSlide('Class_Open')}>
             Turma Aberta
           </Button>

@@ -6,19 +6,19 @@ interface ContainerProps {
 }
 
 const variants = {
-  visible: { opacity: 1, x: 0 },
-  hidden: { opacity: 0, x: '-100%' },
+  visible: { opacity: 1, scale: 1 },
+  hidden: { opacity: 0, scale: 0.5 },
 }
 
 export function Container({ children, showSlide }: ContainerProps) {
-  const className = showSlide ? 'flex' : 'hidden '
+  const isVisible = showSlide ? 'flex' : 'hidden '
 
   return (
     <motion.div
       animate={showSlide ? 'visible' : 'hidden'}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.1 }}
       variants={variants}
-      className={`${className} items-center gap-12 transition-all duration-200`}
+      className={`${isVisible} items-center gap-12 transition-all duration-200`}
     >
       {children}
     </motion.div>

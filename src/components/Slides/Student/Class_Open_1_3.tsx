@@ -1,9 +1,9 @@
 import { Box } from '@/components/Box'
-import { Button } from '@/components/Button'
 import { ButtonBack } from '@/components/ButtonBack'
 import { Container } from '@/components/Container'
 import { useFlow } from '@/contexts/FlowContext'
-import { MdOutlineDangerous } from 'react-icons/md'
+import { MdCheckCircle, MdOutlineDangerous } from 'react-icons/md'
+import { TbArrowNarrowDown } from 'react-icons/tb'
 
 export function Class_Open_1_3() {
   const { currentSlide, setCurrentSlide } = useFlow()
@@ -17,16 +17,26 @@ export function Class_Open_1_3() {
       )}
 
       <Container showSlide={showSlide}>
-        <Box>Gestor imediato validou</Box>
+        <div className="flex flex-col items-center gap-10">
+          <Box className="bg-violet-600">Gestor imediato validou</Box>
 
-        <div className="flex flex-col gap-4">
-          <Button onClick={() => setCurrentSlide('Class_Open_1_4')}>
-            Curso Aceito
-          </Button>
-          <Box>
-            <MdOutlineDangerous size={24} />
-            Curso Rejeitado
-          </Box>
+          <div className="flex items-start gap-4">
+            <Box className="bg-red-600">
+              <MdOutlineDangerous size={24} />
+              Curso Rejeitado
+            </Box>
+
+            <div className="flex flex-col items-center gap-2 flex-wrap">
+              <Box className="bg-green-600 text-white">Curso Aceito</Box>
+              <TbArrowNarrowDown size={20} />
+              <Box className="bg-green-600 text-white">Curso Finalizado</Box>
+              <TbArrowNarrowDown size={20} />
+              <Box className="bg-green-600 text-white">
+                <MdCheckCircle size={20} />
+                Currículo + Link-se
+              </Box>
+            </div>
+          </div>
         </div>
       </Container>
     </>

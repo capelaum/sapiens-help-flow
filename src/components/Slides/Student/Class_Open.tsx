@@ -16,9 +16,9 @@ export function Class_Open() {
       )}
 
       <Container showSlide={showSlide}>
-        <Box>Turma Aberta</Box>
+        <Box className="bg-violet-700">Turma Aberta</Box>
 
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-6">
           <Button onClick={() => setCurrentSlide('Class_Open_1_1')}>
             Solicitação de ação no Sapiens
           </Button>

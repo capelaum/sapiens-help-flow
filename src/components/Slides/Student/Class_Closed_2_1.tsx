@@ -17,15 +17,17 @@ export function Class_Closed_2_1() {
       )}
       <Container showSlide={showSlide}>
         <div className="flex flex-col items-center gap-2 ">
-          <Box>GAE + PAE (Manual ADT)</Box>
+          <Box className="bg-fuchsia-600">GAE + PAE (Manual ADT)</Box>
           <TbArrowNarrowDown size={20} />
-          <Box>Inscrição no Sapiens (Link na divulgação)</Box>
+          <Box className="bg-fuchsia-600">
+            Inscrição no Sapiens (Link na divulgação)
+          </Box>
           <TbArrowNarrowDown size={20} />
-          <Box>Curso finalizado</Box>
+          <Box className="bg-fuchsia-600">Curso finalizado</Box>
           <TbArrowNarrowDown size={20} />
-          <Box>GAE Finalizado</Box>
+          <Box className="bg-fuchsia-600">GAE Finalizado</Box>
           <TbArrowNarrowDown size={20} />
-          <Box>
+          <Box className="bg-fuchsia-600">
             <MdCheckCircle size={20} />
             Currículo + Link-se
           </Box>

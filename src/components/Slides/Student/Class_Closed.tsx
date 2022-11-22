@@ -15,7 +15,7 @@ export function Class_Closed() {
         <ButtonBack onClick={() => setCurrentSlide('Student_Initial')} />
       )}
       <Container showSlide={showSlide}>
-        <Box>Turma Fechada</Box>
+        <Box className="bg-cyan-600">Turma Fechada</Box>
 
         <div className="flex flex-col gap-4">
           <Button onClick={() => setCurrentSlide('Class_Closed_1_1')}>

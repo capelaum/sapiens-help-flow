@@ -16,7 +16,7 @@ export function Collaborator_Initial() {
       )}
 
       <Container showSlide={showSlide}>
-        <Box>Sapiens</Box>
+        <Box className="bg-teal-700">Sapiens</Box>
 
         <div className="flex flex-col gap-4">
           <Button onClick={() => setCurrentSlide('Collaborator_1_1')}>

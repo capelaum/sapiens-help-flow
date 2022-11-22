@@ -15,14 +15,14 @@ export function Collaborator_1_1() {
         <ButtonBack onClick={() => setCurrentSlide('Collaborator_Initial')} />
       )}
       <Container showSlide={showSlide}>
-        <Box>Validação da UniBC</Box>
+        <Box className="bg-teal-700">Validação da UniBC</Box>
 
-        <div className="flex flex-col gap-4">
-          <Box>
+        <div className="flex flex-col items-start gap-4">
+          <Box className="bg-red-600">
             <MdOutlineDangerous size={24} />
             Rejeitado
           </Box>
-          <Box>
+          <Box className="bg-green-600">
             <MdCheckCircle size={20} />
             Ação no portfólio
           </Box>

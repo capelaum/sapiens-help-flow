@@ -12,7 +12,7 @@ export function Slide_Initial() {
     <Container showSlide={showSlide}>
       <img src={mat_thinking} alt="" />
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col items-start gap-6">
         <Button onClick={() => setCurrentSlide('Student_Initial')}>
           É Aluno?
         </Button>
