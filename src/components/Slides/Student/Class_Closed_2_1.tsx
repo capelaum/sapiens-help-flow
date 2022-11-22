@@ -11,23 +11,26 @@ export function Class_Closed_2_1() {
   const showSlide = currentSlide === 'Class_Closed_2_1'
 
   return (
-    <Container showSlide={showSlide}>
-      <ButtonBack onClick={() => setCurrentSlide('Class_Closed')} />
-
-      <div className="flex flex-col items-center gap-2 ">
-        <Box>GAE + PAE (Manual ADT)</Box>
-        <TbArrowNarrowDown size={20} />
-        <Box>Inscrição no Sapiens (Link na divulgação)</Box>
-        <TbArrowNarrowDown size={20} />
-        <Box>Curso finalizado</Box>
-        <TbArrowNarrowDown size={20} />
-        <Box>GAE Finalizado</Box>
-        <TbArrowNarrowDown size={20} />
-        <Box>
-          <MdCheckCircle size={20} />
-          Currículo + Link-se
-        </Box>
-      </div>
-    </Container>
+    <>
+      {showSlide && (
+        <ButtonBack onClick={() => setCurrentSlide('Class_Closed')} />
+      )}
+      <Container showSlide={showSlide}>
+        <div className="flex flex-col items-center gap-2 ">
+          <Box>GAE + PAE (Manual ADT)</Box>
+          <TbArrowNarrowDown size={20} />
+          <Box>Inscrição no Sapiens (Link na divulgação)</Box>
+          <TbArrowNarrowDown size={20} />
+          <Box>Curso finalizado</Box>
+          <TbArrowNarrowDown size={20} />
+          <Box>GAE Finalizado</Box>
+          <TbArrowNarrowDown size={20} />
+          <Box>
+            <MdCheckCircle size={20} />
+            Currículo + Link-se
+          </Box>
+        </div>
+      </Container>
+    </>
   )
 }

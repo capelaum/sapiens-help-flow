@@ -9,8 +9,8 @@ export function Box({ children }: BoxProps) {
     <div
       className="
         flex items-center justify-center gap-2
-        text-lg text-gray-900 bg-white
-        rounded-md px-4 py-2 font-bold text-center
+        text-lg text-white border border-white
+        rounded-full px-4 py-2 font-bold text-center
       "
     >
       {children}

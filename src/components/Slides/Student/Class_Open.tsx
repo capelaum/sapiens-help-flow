@@ -10,19 +10,23 @@ export function Class_Open() {
   const showSlide = currentSlide === 'Class_Open'
 
   return (
-    <Container showSlide={showSlide}>
-      <ButtonBack onClick={() => setCurrentSlide('Student_Initial')} />
+    <>
+      {showSlide && (
+        <ButtonBack onClick={() => setCurrentSlide('Student_Initial')} />
+      )}
 
-      <Box>Turma Aberta</Box>
+      <Container showSlide={showSlide}>
+        <Box>Turma Aberta</Box>
 
-      <div className="flex flex-col gap-4">
-        <Button onClick={() => setCurrentSlide('Class_Open_1_1')}>
-          Solicitação de ação no Sapiens
-        </Button>
-        <Button onClick={() => setCurrentSlide('Class_Open_2_1')}>
-          GAE + PE
-        </Button>
-      </div>
-    </Container>
+        <div className="flex flex-col gap-4">
+          <Button onClick={() => setCurrentSlide('Class_Open_1_1')}>
+            Solicitação de ação no Sapiens
+          </Button>
+          <Button onClick={() => setCurrentSlide('Class_Open_2_1')}>
+            GAE + PE
+          </Button>
+        </div>
+      </Container>
+    </>
   )
 }

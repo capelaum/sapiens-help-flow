@@ -11,19 +11,23 @@ export function Class_Open_1_4() {
   const showSlide = currentSlide === 'Class_Open_1_4'
 
   return (
-    <Container showSlide={showSlide}>
-      <ButtonBack onClick={() => setCurrentSlide('Class_Open_1_3')} />
+    <>
+      {showSlide && (
+        <ButtonBack onClick={() => setCurrentSlide('Class_Open_1_3')} />
+      )}
 
-      <div className="flex items-center gap-2">
-        <Box>Curso Aceito</Box>
-        <TbArrowNarrowRight size={20} />
-        <Box>Curso Finalizado</Box>
-        <TbArrowNarrowRight size={20} />
-        <Box>
-          <MdCheckCircle size={20} />
-          Currículo + Link-se
-        </Box>
-      </div>
-    </Container>
+      <Container showSlide={showSlide}>
+        <div className="flex items-center gap-2">
+          <Box>Curso Aceito</Box>
+          <TbArrowNarrowRight size={20} />
+          <Box>Curso Finalizado</Box>
+          <TbArrowNarrowRight size={20} />
+          <Box>
+            <MdCheckCircle size={20} />
+            Currículo + Link-se
+          </Box>
+        </div>
+      </Container>
+    </>
   )
 }

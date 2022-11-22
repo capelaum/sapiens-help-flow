@@ -1,3 +1,6 @@
+import { Collaborator_Initial } from './components/Slides/Collaborator/Collaborator_Initial'
+import { Collaborator_1_1 } from './components/Slides/Collaborator/Collaborattor_1_1'
+import { Collaborator_2_1 } from './components/Slides/Collaborator/Collaborattor_2_1'
 import { Slide_Initial } from './components/Slides/Slide_Initial'
 import { Class_Closed } from './components/Slides/Student/Class_Closed'
 import { Class_Closed_1_1 } from './components/Slides/Student/Class_Closed_1_1'
@@ -14,6 +17,7 @@ export default function App() {
   return (
     <>
       <Slide_Initial />
+
       <Student_Initial />
 
       <Class_Open />
@@ -26,6 +30,10 @@ export default function App() {
       <Class_Closed />
       <Class_Closed_1_1 />
       <Class_Closed_2_1 />
+
+      <Collaborator_Initial />
+      <Collaborator_1_1 />
+      <Collaborator_2_1 />
     </>
   )
 }

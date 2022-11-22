@@ -16,7 +16,9 @@ export function Slide_Initial() {
         <Button onClick={() => setCurrentSlide('Student_Initial')}>
           É Aluno?
         </Button>
-        <Button>É Colaborador?</Button>
+        <Button onClick={() => setCurrentSlide('Collaborator_Initial')}>
+          É Colaborador?
+        </Button>
       </div>
     </Container>
   )

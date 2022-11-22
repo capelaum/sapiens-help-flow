@@ -1,31 +1,30 @@
 import { Box } from '@/components/Box'
-import { Button } from '@/components/Button'
 import { ButtonBack } from '@/components/ButtonBack'
 import { Container } from '@/components/Container'
 import { useFlow } from '@/contexts/FlowContext'
-import { MdOutlineDangerous } from 'react-icons/md'
+import { MdCheckCircle, MdOutlineDangerous } from 'react-icons/md'
 
-export function Class_Open_1_3() {
+export function Collaborator_1_1() {
   const { currentSlide, setCurrentSlide } = useFlow()
 
-  const showSlide = currentSlide === 'Class_Open_1_3'
+  const showSlide = currentSlide === 'Collaborator_1_1'
 
   return (
     <>
       {showSlide && (
-        <ButtonBack onClick={() => setCurrentSlide('Class_Open_1_2')} />
+        <ButtonBack onClick={() => setCurrentSlide('Collaborator_Initial')} />
       )}
-
       <Container showSlide={showSlide}>
-        <Box>Gestor imediato validou</Box>
+        <Box>Validação da UniBC</Box>
 
         <div className="flex flex-col gap-4">
-          <Button onClick={() => setCurrentSlide('Class_Open_1_4')}>
-            Curso Aceito
-          </Button>
           <Box>
             <MdOutlineDangerous size={24} />
-            Curso Rejeitado
+            Rejeitado
+          </Box>
+          <Box>
+            <MdCheckCircle size={20} />
+            Ação no portfólio
           </Box>
         </div>
       </Container>

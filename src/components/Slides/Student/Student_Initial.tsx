@@ -10,19 +10,23 @@ export function Student_Initial() {
   const showSlide = currentSlide === 'Student_Initial'
 
   return (
-    <Container showSlide={showSlide}>
-      <Box>Qual é o tipo do curso?</Box>
+    <>
+      {showSlide && (
+        <ButtonBack onClick={() => setCurrentSlide('Slide_Initial')} />
+      )}
 
-      <ButtonBack onClick={() => setCurrentSlide('Slide_Initial')} />
+      <Container showSlide={showSlide}>
+        <Box>Qual é o tipo do curso?</Box>
 
-      <div className="flex flex-col gap-4">
-        <Button onClick={() => setCurrentSlide('Class_Open')}>
-          Turma Aberta
-        </Button>
-        <Button onClick={() => setCurrentSlide('Class_Closed')}>
-          Turma Fechada
-        </Button>
-      </div>
-    </Container>
+        <div className="flex flex-col gap-4">
+          <Button onClick={() => setCurrentSlide('Class_Open')}>
+            Turma Aberta
+          </Button>
+          <Button onClick={() => setCurrentSlide('Class_Closed')}>
+            Turma Fechada
+          </Button>
+        </div>
+      </Container>
+    </>
   )
 }

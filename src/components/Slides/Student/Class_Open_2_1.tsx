@@ -11,21 +11,25 @@ export function Class_Open_2_1() {
   const showSlide = currentSlide === 'Class_Open_2_1'
 
   return (
-    <Container showSlide={showSlide}>
-      <ButtonBack onClick={() => setCurrentSlide('Class_Open')} />
+    <>
+      {showSlide && (
+        <ButtonBack onClick={() => setCurrentSlide('Class_Open')} />
+      )}
 
-      <div className="flex items-center gap-2 ">
-        <Box>GAE + PE</Box>
-        <TbArrowNarrowRight size={20} />
-        <Box>Curso contratado</Box>
-        <TbArrowNarrowRight size={20} />
-        <Box>GAE finalizado</Box>
-        <TbArrowNarrowRight size={20} />
-        <Box>
-          <MdCheckCircle size={20} />
-          Currículo + Link-se
-        </Box>
-      </div>
-    </Container>
+      <Container showSlide={showSlide}>
+        <div className="flex items-center gap-2 ">
+          <Box>GAE + PE</Box>
+          <TbArrowNarrowRight size={20} />
+          <Box>Curso contratado</Box>
+          <TbArrowNarrowRight size={20} />
+          <Box>GAE finalizado</Box>
+          <TbArrowNarrowRight size={20} />
+          <Box>
+            <MdCheckCircle size={20} />
+            Currículo + Link-se
+          </Box>
+        </div>
+      </Container>
+    </>
   )
 }

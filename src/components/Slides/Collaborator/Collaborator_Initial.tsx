@@ -4,25 +4,26 @@ import { ButtonBack } from '@/components/ButtonBack'
 import { Container } from '@/components/Container'
 import { useFlow } from '@/contexts/FlowContext'
 
-export function Class_Closed() {
+export function Collaborator_Initial() {
   const { currentSlide, setCurrentSlide } = useFlow()
 
-  const showSlide = currentSlide === 'Class_Closed'
+  const showSlide = currentSlide === 'Collaborator_Initial'
 
   return (
     <>
       {showSlide && (
-        <ButtonBack onClick={() => setCurrentSlide('Student_Initial')} />
+        <ButtonBack onClick={() => setCurrentSlide('Slide_Initial')} />
       )}
+
       <Container showSlide={showSlide}>
-        <Box>Turma Fechada</Box>
+        <Box>Sapiens</Box>
 
         <div className="flex flex-col gap-4">
-          <Button onClick={() => setCurrentSlide('Class_Closed_1_1')}>
-            EAD + Trilhas (Moodle)
+          <Button onClick={() => setCurrentSlide('Collaborator_1_1')}>
+            Proposta de ação educacional
           </Button>
-          <Button onClick={() => setCurrentSlide('Class_Closed_2_1')}>
-            GAE + PAE (Manual ADT)
+          <Button onClick={() => setCurrentSlide('Collaborator_2_1')}>
+            É titular da ação?
           </Button>
         </div>
       </Container>
