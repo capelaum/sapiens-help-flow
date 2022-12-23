@@ -20,10 +20,11 @@ export function Collaborator_Initial() {
 
         <div className="flex flex-col gap-4">
           <Button onClick={() => setCurrentSlide('Collaborator_1_1')}>
-            Proposta de ação educacional
+            Nova Ação? <br />
+            (Proposta de ação educacional)
           </Button>
           <Button onClick={() => setCurrentSlide('Collaborator_2_1')}>
-            É titular da ação?
+            Tem no Portfolio
           </Button>
         </div>
       </Container>
