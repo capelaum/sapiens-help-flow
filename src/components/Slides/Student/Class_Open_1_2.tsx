@@ -27,7 +27,7 @@ export function Class_Open_1_2() {
 
           <a
             className="flex gap-2 items-center text-center text-lg bg-white text-gray-900 rounded-md py-2 px-4 hover:bg-gray-100"
-            href="@/assets/Infograficos/Infográfico - Gerenciar Solicitações.pdf"
+            href="/Infograficos/Infográfico - Gerenciar Solicitações.pdf"
             download
           >
             <GrDocumentPdf size={20} />
